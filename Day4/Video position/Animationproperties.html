@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Demo</title>
+        <style type="text/css">
+            div
+            {
+                height: 200px;
+                width: 200;
+                transition: 3s;
+                font-size: 25px;
+                font-weight: bold;
+                color: #c0a0a0;
+                background-color: rgb(69, 69, 229);                            
+            }
+
+            #TranslateDiv:hover
+            {
+                -webkit-transform:translate(100px,100px);
+                    -moz-transform:translate(100px,100px);
+                        -ms-transform:translate(100px,100px);
+                         -o-transform:translate(100px,100px);
+                            transform:translate(100px,100px);
+                        background-color: rgb(153, 0, 255);
+                        color: rgb(255, 153, 0);
+            }
+            #RotateDiv:hover
+            {
+                -webkit-transform:rotate(360deg);
+                   -moz-transform:rotate(360deg); 
+                    -ms-transform:rotate(360deg);
+                     -o-transform:rotate(360deg);
+                        transform:rotate(90deg);
+                        background-color: rgb(153, 0, 255);
+                      color: rgb(255, 153, 0);
+
+            }
+             #RotateDiv3D:hover
+            {
+                -webkit-transform:rotate3d(1,1,0,360deg); 
+                    -moz-transform:rotate3d(1,1,0,360deg);
+                      -ms-transform:rotate3d(1,1,0,360deg);
+                      -o-transform:rotate3d(1,1,0,360deg);
+                         transform:rotate3d(1,1,0,360deg);
+                         background-color: rgb(153, 0, 255);
+                       color: rgb(255, 153, 0);
+            }
+            #SkewDiv:hover
+            {
+                -webkit-transform:skew(45deg);
+                   -moz-transform:skew(45deg);
+                    -ms-transform:skew(45deg);
+                     -o-transform:skew(45deg);
+                        transform:skew(45deg);
+                        background-color: rgb(153, 0, 255); 
+                      color: rgb(255, 153, 0);  
+            }
+            #ScaleDiv:hover
+            {
+                -webkit-transform:scale(1.5,0.5);
+                   -moz-transform:scale(1.5,0.5);
+                    -ms-transform:scale(1.5,0.5);
+                     -o-transform:scale(1.5,0.5);
+                        transform:scale(0.5,1.5);
+                 background-color: rgb(153, 0, 255);
+              color: rgb(255, 153, 0);
+            }
+
+            #OpacityDiv:hover
+            {
+                background-color: aliceblue;
+                opacity:0.8;
+            }
+            #RGBADIV:hover
+            {
+                background: rgba(128,128,0,0.5);
+            }
+        
+            #BoxShadowDiv:hover
+            {
+                box-shadow: 0px 0px 30px rgb(223, 77, 239);
+            }
+
+            #TextShadowDiv:hover
+            {
+                text-shadow:3px 3px 3px rgb(243, 243, 29);
+            }
+
+            #BorderRadiusDiv:hover
+            {
+                border-radius: 40%;
+                background-color: rgb(97, 207, 234);
+            }
+
+            #OverFlowDiv{overflow: auto;}
+        </style>
+    </head>
+    <body>
+        <div id="TranslateDiv">Translate</div><br><br><hr>
+        <div id="RotateDiv">Rotate</div><br><br><hr>
+        <div id="RotateDiv3D">Rotate 3D</div><br><br><hr>
+        <div id="SkewDiv">Skew</div><br><br><hr>
+        <div id="ScaleDiv">Scale</div><br><br><hr>
+        <div id="OpacityDiv">Opacity</div><br><br><hr>
+        <div id="RGBADiv">RGBA</div><br><br><hr>
+        <div id="BoxShadowDiv">Box-shadow</div><br><br><hr>
+        <div id="TextShadowDiv">Text-shadow</div><br><br><hr>
+        <div id="BorderRadiusDiv">Border-radius</div><br><br><hr>
+        <div id="OverFlowDiv">Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow</div><br><br><hr>
+    </body>
+</html>
+                
+
+        
+
+        
+    
