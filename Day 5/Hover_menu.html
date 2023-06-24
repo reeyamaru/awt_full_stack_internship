@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css hover element - selector or child combinator</title>
+        <style type="text|css">
+            #mainUL li ul li{display: none;}
+            #mainUL li:hover ul li{display: block;}
+        </style>
+    </head>
+    <body>
+        <ul id="mainUL">
+            <li>google
+                <ul>
+                    <li>gmail
+                        <ul>
+                            <li>sign up</li>
+                            <li>sign in 
+                                <ul>
+                                    <li>sign in as admin</li>
+                                    <li>sign in as member</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li>youtube</li>
+                        <li>gdrive</li>
+                        <li>gmap</li>
+                    </ul>
+            </li>
+            <li>facebook</li>
+            <li>microsoft
+                <ul>
+                    <li>bing</li>
+                    <li>linked in</li>
+                </ul>
+            </li>
+            <li>PSW</li>
+            <li>amazon</li>
+        </ul>
+    </body>
+</html>
