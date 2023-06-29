@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="Task.js"></script>
+
+    <script>
+        function inlinealert(){
+            alert("This is inline alert");
+        }
+
+        function inlineconfirm(){
+            confirm("Are you sure?");
+        }
+
+        function promptinline(){
+            let a = prompt("Enter your firstname:");
+        }
+        
+    </script>
+
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(211, 240, 96);
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div id="btn">Reeya Maru</div>
+    <button onclick="inlinealert()">Inline Alert</button>
+    <button onclick="internalalert()">Internal Alert</button>
+    <button onclick="externalalert()">External Alert</button><br/><br/>
+    <button onclick="inlineconfirm()">Confirm Inline</button>
+    <button onclick="internalconfirm()">Confirm Internal</button>
+    <button onclick="externalconfirm()">Confirm External</button><br/><br/>
+    <button onclick="promptinline()">Prompt Inline</button>
+    <button onclick="promptinternal()">Prompt Internal</button>
+    <button onclick="promptexternal()">Prompt External</button><br/><br/>
+
+    <h2>Change to div</h2>
+    
+    <label for="color-picker">Color:</label>
+    <input type="color" value="#ff0000" id="color-picker"><br/><br/>
+
+    <button onclick="toChangeColor()">Click here to chage in blue</button><br/><br/>
+
+    <button onclick="toChooseColor()">Click to choose the color</button><br/><br/>
+    <br/>
+    <h2>Change to body</h2>
+    
+    <lable for="color-picker">Color:</lable>
+    <input type="color" value="#ff0000" id="colorpicker2"><br/><br/>
+
+    <button onclick="toChangeColor1()">Click here to change in yellow</button><br/><br/>
+
+    <button onclick="toChooseColor1()">Click to choose the color</button><br/><br/>
+
+
+    <script>
+        function internalalert(){
+            alert("This is internal alert");
+        }
+
+        function internalconfirm(){
+            confirm("Are you sure?");
+        }
+
+        function promptinternal(){
+            let a = prompt("Enter your firstname:");
+        }
+
+        document
+        .getElementById("colorpicker")
+        .addEventListener("change", function () {
+          document.querySelector("#btn").style.backgroundColor = this.value;
+        });
+
+      document
+        .getElementById("colorpicker2")
+        .addEventListener("change", function () {
+          document.body.style.backgroundColor = this.value;
+          // document.querySelector("#btn").style.backgroundColor = "#fff
+        });
+
+        function toChangeColor(){
+            document.getElementById("btn").style.backgroundColor="blue";
+        }
+
+        function toChangeColor1(){
+            document.body.style.backgroundColor="yellow";
+        }
+
+        function toChooseColor(){
+            let color = prompt("Please enter the color");
+            if(color != null){
+                document.getElementById("btn").style.backgroundColor = color;
+            }
+        }
+
+        function toChooseColor1(){
+            let color = prompt("Please enter the color");
+            if(color != null){
+                document.body.style.backgroundColor = color;
+            }
+        }
+    </script>
+
+</body>
+</html>
