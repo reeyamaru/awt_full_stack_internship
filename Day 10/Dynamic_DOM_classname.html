@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynemic Demo Tagname</title>
+</head>
+<body>
+    <h1>Dynemic DOM manipulation </h1>
+    <h2>The getElementByTagname() mwtod</h2>
+
+    <p>An unordered list:</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>Javascript</li>
+    </ul>
+    <p>The innerHTML of the third 11 element is:</p>
+    <p id="demo"></p>
+
+<script>
+
+const collection =document.getElementsByTagName("li");
+ document.getElementById("demo").innerHTML= collection[0].innerHTML;
+
+</script>
+</body>
+</html>
