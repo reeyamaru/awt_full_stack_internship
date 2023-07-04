@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" /> <title>JQuery Callback Function </title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+        .button {
+            background-color: #3380FF;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 2px 3px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("h2").hide("slow", function () {
+                    // alert define inside the callback 
+                    alert("The content is now hidden");
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button class="button" id="hide">Wide</button> 
+    <h2>This is an example for callback function</h2>
+</body>
+</html>
